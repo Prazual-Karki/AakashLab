@@ -5,7 +5,7 @@ import { FaDocker } from 'react-icons/fa6'
 const Intro = () => {
   return (
     <div>
-      <div className='flex sm:flex-row flex-col gap-5  mb-[80px] sm:mb-5'>
+      <div className='flex sm:flex-row flex-col lg:gap-5  mb-[80px] sm:mb-[80px]'>
         <div className='sm:w-1/2 w-full '>
           <img
             src='https://aakashresearchlabs.com/assets/img/arl-logo.png'
@@ -13,7 +13,7 @@ const Intro = () => {
             className='h-full'
           />
         </div>
-        <div className='sm:w-1/2 w-full sm:px-4 pt-10'>
+        <div className='sm:w-1/2 w-full lg:px-4  pt-10'>
           <h3 className='text-[16px] text-zinc-600 font-semibold text-left'>
             ABOUT US-----
           </h3>
@@ -36,7 +36,7 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className='grid sm:grid-cols-3 gap-7 grid-cols-1'>
+      <div className='grid sm:grid-cols-3 lg:gap-7 grid-cols-1'>
         <div className='sm:px-5 '>
           <div className=' flex flex-row gap-5 text-[22px] font-bold text-zinc-700 items-center  justify-center'>
             <GoGoal size={30} className='text-cyan-700' />

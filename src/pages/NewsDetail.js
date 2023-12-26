@@ -12,7 +12,7 @@ const NewsDetail = () => {
       dispatch(getNewsList())
     }, [])
   return (
-    <div className='sm:mx-10  my-5'>
+    <div className='lg:mx-10  my-5'>
       <h1 className='sm:text-[32px] text-[28px] font-semibold text-slate-800 mb-10'>
         {'Tourists to Kenya can go visa-free in 2024'}
       </h1>
@@ -25,7 +25,7 @@ const NewsDetail = () => {
       <p className='text-right text-zinc-400 my-5 mx-5 underline text-[14px]'>
         Published at: {'Dec 22 2023'}
       </p>
-      <p className='sm:px-9 px-6 my-5 text-justify leading-7 text-zinc-500'>
+      <p className='lg:px-9 px-6 my-5 text-justify leading-7 text-zinc-500'>
         As the Indian government has announced to provide 95,000 tonnes of rice
         to Nepal on quota basis after imposing a ban on the export of
         non-basmati rice, the Nepal government has asked the private importers
