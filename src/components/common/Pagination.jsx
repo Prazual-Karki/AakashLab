@@ -1,3 +1,11 @@
+/**
+ * The Pagination component is a React component that displays a set of buttons representing pages,
+ * allowing the user to navigate through a list of news articles.
+ * @returns The Pagination component is returning a div element containing a list of buttons. Each
+ * button represents a page number. The button's appearance is determined by the current page state. If
+ * the page number matches the current page, it will have a different style (font weight, background
+ * color, and text color) compared to the other buttons.
+ */
 import React from 'react'
 
 

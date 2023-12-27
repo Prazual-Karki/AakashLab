@@ -4,11 +4,9 @@ import crossIcon from '../assets/icons/crossicon.png'
 import hamburgerIcon from '../assets/icons/hamburgericon.png'
 import { Link, useLocation } from 'react-router-dom'
 
-
 const Navbar = () => {
   const [isSidebar, setIsSidebar] = useState(false)
   const location = useLocation().pathname
-  const pathname = window.location.pathname
 
   const menuList = [
     { id: 1, name: 'Home', path: '/' },
@@ -54,13 +52,15 @@ const Navbar = () => {
             </Link>
           </div>
           <div className='flex flex-row items-center justify-between gap-1 sm:gap-8'>
-            {menuList.map((menu) => {
+            {menuList.map((menu, i) => {
               return (
                 <Link
-                  key={menu.id}
+                  key={i}
                   to={menu.path}
                   className={`flex flex-row hover:text-blue-800 items-center justify-between gap-1 cursor-pointer sm:gap-2 ${
-                    location === menu.path ? ' border-b-[2px] border-blue-600' : ''
+                    location === menu.path
+                      ? ' border-b-[2px] border-blue-600'
+                      : ''
                   } `}
                 >
                   <p className='font-[600] text-[14px] tracking-wide leading-[17px]'>
@@ -89,9 +89,10 @@ const Navbar = () => {
             </Link>
             <img src={crossIcon} alt='cross' height={40} width={38} />
           </div>
-          {menuList.map((menu) => {
+          {menuList.map((menu, i) => {
             return (
               <Link
+                key={i}
                 to={menu.path}
                 className='flex flex-row items-center gap-2 py-[10px]  cursor-pointer '
                 onClick={() => setIsSidebar(false)}

@@ -9,7 +9,6 @@ export const getNewsList = ()=>{
           )
           .then((res) => {
             dispatch(setNewsList(res.data.articles))
-            console.log(res.data.articles)
           }).catch(()=>{
             console.log("something wrong");
           })
