@@ -13,7 +13,7 @@ const NewsDetail = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(getNewsList())
+    // dispatch(getNewsList())
     setnewsDetail(newsList[params.id])
 
   }, [])
@@ -26,9 +26,9 @@ const NewsDetail = () => {
     </>
   ) : (
     <>
-      <div className='lg:mx-10  my-5'>
-        <h1 className='sm:text-[32px] text-[28px] font-semibold text-slate-800 mb-10'>
-          {newsDetail?.title ?? ''}
+      <div className='mt-5 mb-[100px] lg:mx-10'>
+        <h1 className='sm:text-[32px] text-[28px] underline font-semibold text-slate-800 mb-10'>
+          {newsDetail?.title ?? ''} :
         </h1>
         <img src={newsDetail?.image ?? ''} alt='newsImage' className='w-full' />
 
@@ -38,8 +38,9 @@ const NewsDetail = () => {
             ? moment(newsDetail?.publishedAt).format('MMM Do YYYY')
             : ''}
         </p>
-        <p className='lg:px-9 px-6 my-5 text-justify leading-7 text-zinc-500'>
-          {newsDetail?.content ?? ''}
+        <p className='px-6 my-5 leading-7 text-justify lg:px-9 text-zinc-500'>
+          <span className='text-[30px] text-zinc-950'>{newsDetail?.content.charAt(0)}</span>
+          {newsDetail?.content.substring(1) ?? ''}
         </p>
       </div>
     </>

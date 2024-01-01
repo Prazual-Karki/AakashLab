@@ -5,25 +5,25 @@ import { FaDocker } from 'react-icons/fa6'
 const Intro = () => {
   return (
     <div>
-      <div className='flex sm:flex-row flex-col lg:gap-5  mb-[80px] sm:mb-[80px]'>
-        <div className='sm:w-1/2 w-full '>
+      <div className='flex md:flex-row flex-col lg:gap-5  mb-[80px] sm:mb-[80px]'>
+        <div className='w-full md:w-1/2 '>
           <img
             src='https://aakashresearchlabs.com/assets/img/arl-logo.png'
             alt='aboutus'
             className='h-full'
           />
         </div>
-        <div className='sm:w-1/2 w-full lg:px-4  pt-10'>
+        <div className='w-full pt-10 md:w-1/2 lg:px-4'>
           <h3 className='text-[16px] text-zinc-600 font-semibold text-left'>
-            ABOUT US-----
+            ABOUT US---
           </h3>
           <h1 className='text-[32px] text-left font-PlayFair font-bold tracking-wider '>
-            <span className='text-zinc-700 leading-3'>
+            <span className='leading-3 text-zinc-700'>
               Inspiring Businesses With
             </span>{' '}
-            <span className=' text-cyan-600 leading-3'>IT Solutions</span>
+            <span className='leading-3 text-cyan-600'>IT Solutions</span>
           </h1>
-          <p className=' pt-5 text-zinc-500 text-justify'>
+          <p className='pt-5 text-justify text-zinc-500'>
             Aakash Labs combines technology with business intelligence to
             catalyze change and deliver data driven results. We're a dynamic
             team of passionate people with technical, creative & digital
@@ -36,7 +36,7 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className='grid sm:grid-cols-3 lg:gap-7 grid-cols-1'>
+      <div className='grid grid-cols-1 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:gap-7'>
         <div className='sm:px-5 '>
           <div className=' flex flex-row gap-5 text-[22px] font-bold text-zinc-700 items-center  justify-center'>
             <GoGoal size={30} className='text-cyan-700' />

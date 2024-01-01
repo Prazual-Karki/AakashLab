@@ -19,7 +19,7 @@ const News = () => {
   const currentnews = newsList.slice(firstNewsIndex, lastNewsIndex)
 
   useEffect(() => {
-    dispatch(getNewsList())
+    // dispatch(getNewsList())
   }, [])
 
   return (
@@ -29,7 +29,7 @@ const News = () => {
         Check out our latest news
       </h2>
       {newsList.length > 0 ? (
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-5 xl:px-20 sm:px-10 px-2  my-8'>
+        <div className='grid grid-cols-1 px-2 my-8 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-5 2xl:px-20 sm:px-5'>
           {currentnews.map((news, i) => {
             return (
               <Link
@@ -37,7 +37,7 @@ const News = () => {
                 className=''
                 to={`/news/${(currentPage - 1) * newsPerPage + i}`}
               >
-                {/* id not available and after refresh each time it will provide new array of news. so i used array index as id here  */}
+                {/* id not available for news array and after refresh each time it will provide new array of news. so i used array index as id here  */}
                 <NewsCard
                   title={news.title}
                   imageUrl={news.image}
