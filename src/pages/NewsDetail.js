@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { getNewsList } from '../components/api/news-fetch-api'
 import moment from 'moment'
-import { type } from '@testing-library/user-event/dist/type'
 
 
 const NewsDetail = () => {
