@@ -19,7 +19,7 @@ const News = () => {
   const currentnews = newsList.slice(firstNewsIndex, lastNewsIndex)
 
   useEffect(() => {
-    // dispatch(getNewsList())
+    dispatch(getNewsList())
   }, [])
 
   return (

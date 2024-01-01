@@ -13,7 +13,7 @@ const NewsDetail = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    // dispatch(getNewsList())
+    dispatch(getNewsList())
     setnewsDetail(newsList[params.id])
 
   }, [])
